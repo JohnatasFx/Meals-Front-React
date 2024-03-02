@@ -45,7 +45,7 @@ export default function Meals() {
           <h1>Refeição</h1>
         </div>
 
-        <div className='book-content'>
+        <div className='meal-content'>
 
         </div>
       </div>

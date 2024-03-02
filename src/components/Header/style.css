@@ -35,3 +35,7 @@
     font-weight: bold;
     margin-right: 40px;
 }
+
+.menu-container a:hover{
+    color: #f58723;
+}
