@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+#content{
+    width: 100%;
+}
+
+.title-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3%;
+}
+
+.title-content h1{
+    color: #fff;
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
