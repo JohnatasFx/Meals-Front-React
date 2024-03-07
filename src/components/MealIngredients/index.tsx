@@ -14,7 +14,14 @@ const MealIngredients: React.FC<Props> = ({ arrayProp, arrayProp2 }) => {
         {/* Mapeia os arrays simultaneamente */}
         {arrayProp.map((item, index) => (
           <li key={index}>
-            {item} - {arrayProp2[index]}
+            <input
+              type="checkbox"
+              id={`checkbox-${index}`}
+              name={`checkbox-${index}`}
+            />
+            <label htmlFor={`checkbox-${index}`}>
+              {item} - {arrayProp2[index]}
+            </label>
           </li>
         ))}
       </ul>

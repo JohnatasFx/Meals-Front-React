@@ -1,7 +1,22 @@
 .meal-ingredients{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 25px;
+}
+
+.meal-ingredients label,.meal-ingredients input[type=checkbox] {
+    cursor: pointer
+}
+
+.meal-ingredients :checked~label{
+    text-decoration: line-through;
+    color: #000;
+}
+
+.form-check-input:checked {
+    background: #703416;
+    border-color: #703416
 }

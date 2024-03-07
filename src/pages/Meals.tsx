@@ -127,6 +127,8 @@ export default function Meals() {
 
   console.log(measures);
 
+  const title = meal?.strMeal;
+
   return (
     <main>
       <Header />
@@ -138,7 +140,7 @@ export default function Meals() {
 
         <div className="meal-content">
           <div className="meal-image">
-            <MealImage imageUrl={`${meal?.strMealThumb}`} />
+            <MealImage title={title} imageUrl={`${meal?.strMealThumb}`} />
           </div>
 
           <div className="meal-ingredients">
