@@ -8,7 +8,7 @@ interface Props {
 
 const MealIngredients: React.FC<Props> = ({ arrayProp, arrayProp2 }) => {
   return (
-    <div>
+    <div className="meal-ingredients">
       <h2>Ingredients:</h2>
       <ul>
         {/* Mapeia os arrays simultaneamente */}

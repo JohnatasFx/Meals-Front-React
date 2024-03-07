@@ -7,7 +7,7 @@ interface MealImageProps {
 
 const MealImage: React.FC<MealImageProps> = ({ imageUrl }) => {
   return (
-    <div>
+    <div className="meal-image">
       <img src={imageUrl} alt="Meal" />
     </div>
   );
