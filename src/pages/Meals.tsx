@@ -7,6 +7,8 @@ import MealImage from "../components/MealImage";
 import MealIngredients from "../components/MealIngredients";
 import MealInstructions from "../components/MealInstructions";
 import MealVideo from "../components/MealVideo";
+import MealInfo from "../components/MealInfo";
+import MealFooter from "../components/MealFooter";
 
 const getMeal = async () => {
   try {
@@ -139,8 +141,18 @@ export default function Meals() {
         </div>
 
         <div className="meal-content">
-          <div className="meal-image">
-            <MealImage title={title} imageUrl={`${meal?.strMealThumb}`} />
+          <div className="apresent">
+            <div className="meal-image">
+              <MealImage title={title} imageUrl={`${meal?.strMealThumb}`} imageSource={`${meal?.strImageSource}`} />
+            </div>
+
+            <div className="meal-info">
+              <MealInfo
+                area={`${meal?.strArea}`}
+                categoria={`${meal?.strCategory}`}
+                drink={`${meal?.strDrinkAlternate}`}
+              />
+            </div>
           </div>
 
           <div className="meal-ingredients">
@@ -148,11 +160,15 @@ export default function Meals() {
           </div>
 
           <div className="meal-instructions">
-            <MealInstructions instructions={`${meal?.strInstructions}`} />
+            <MealInstructions instructions={`${meal?.strInstructions}`} source={`${meal?.strSource}`}/>
           </div>
 
           <div className="meal-video">
-            <MealVideo videoURL={`${video}`} />
+            <MealVideo videoId={`${video}`} videoURL={`${meal?.strYoutube}`}/>
+          </div>
+
+          <div className="meal-footer">
+            <MealFooter tags={`${meal?.strTags}`} dateModified={meal?.dateModified} creativeCommonsConfirmed={`${meal?.strCreativeCommonsConfirmed}`}/>
           </div>
         </div>
       </div>

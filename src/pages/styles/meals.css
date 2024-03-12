@@ -3,7 +3,7 @@ main{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color:white;
+    background-color:#FFF9ED;
     font-family: sans-serif;
     font-size: 16px;
 }
@@ -37,10 +37,36 @@ main{
     padding: 0 3% 3% 3%;
 }
 
+.meal-content .apresent {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meal-content .apresent .meal-info{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #content .meal-content .meal-ingredients {
-    width: 80%;
+    width: 90%;
 }
 
 #content .meal-content .meal-instructions {
-    width: 80%;
+    width: 90%;
+}
+
+#content .meal-content .meal-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#content .meal-content .meal-footer {
+    width: 90%;
 }

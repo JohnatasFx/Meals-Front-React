@@ -3,6 +3,7 @@ import "./style.css";
 
 interface Props {
     instructions: string;
+    source: string;
 }
 
 const MealInstructions: React.FC<Props> = ({ instructions }) => {

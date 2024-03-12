@@ -1,7 +1,7 @@
 interface Meal {
   idMeal: number;
   strMeal: string;
-  strDrinkAlternate: string;
+  strDrinkAlternate?: string | undefined;
   strCategory: string;
   strArea: string;
   strInstructions: string;
@@ -51,7 +51,7 @@ interface Meal {
   strSource: string;
   strImageSource: string;
   strCreativeCommonsConfirmed: string;
-  dateModified: number;
+  dateModified: string;
 }
 
 export default Meal;

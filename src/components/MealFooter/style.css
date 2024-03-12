@@ -1,0 +1,12 @@
+.meal-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+p {
+    display: flex;
+    text-align: justify;
+}

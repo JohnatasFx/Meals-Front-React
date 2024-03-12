@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #f1ecdf;
+    background-color: #ebe2ce;
 }
 
 #header .logo-container {
@@ -19,16 +19,25 @@
 .logo-container img {
     width: 100%;
     height: auto;
-    max-width: 120px;
+    max-width: 80px;
+    padding-left: 25px;
 }
 
 #header .menu-container {
     width: 80%;
+    height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 5px;
+}
+
+#header .menu-container a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-container a {
@@ -42,4 +51,9 @@
 
 .menu-container a:hover{
     color: #f58723;
+}
+
+.menu-container img{
+    width: 22px;
+    margin-right: 5px;
 }

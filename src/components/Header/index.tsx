@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo.png'
-import './style.css'
+import logo from '../../assets/logo.png';
+import './style.css';
+import refresh from '../../assets/refresh-icon.png';
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
       </div>
       
       <div className="menu-container">
-        <Link to="/">Gerar nova refeição</Link>
+        <Link to="/"><img src={refresh} alt="" />Gerar nova refeição</Link>
       </div>
     </div>
   );
