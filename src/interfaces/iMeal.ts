@@ -1,7 +1,7 @@
 interface Meal {
   idMeal: number;
   strMeal: string;
-  strDrinkAlternate?: string | undefined;
+  strDrinkAlternate: string;
   strCategory: string;
   strArea: string;
   strInstructions: string;

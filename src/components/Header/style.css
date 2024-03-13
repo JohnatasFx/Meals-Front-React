@@ -1,59 +1,77 @@
 #header {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ebe2ce;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ebe2ce;
 }
 
 #header .logo-container {
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo-container img {
-    width: 100%;
-    height: auto;
-    max-width: 80px;
-    padding-left: 25px;
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  padding-left: 25px;
 }
 
 #header .menu-container {
-    width: 80%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  margin-right: 25px;
 }
 
-#header .menu-container a {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#header .menu-container button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 24px;
 }
 
-.menu-container a {
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 40px;
+.menu-container button {
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #f58723;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px 5px 5px 5px;
+  transition: background-color 0.3s;
 }
 
-.menu-container a:hover{
-    color: #f58723;
+.menu-container button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.menu-container img{
-    width: 22px;
-    margin-right: 5px;
+.menu-container button img {
+  filter: invert(100%);
+  width: 22px;
+  margin-right: 5px;
+}
+
+.menu-container button:hover {
+  background-color: #c07229;
 }
